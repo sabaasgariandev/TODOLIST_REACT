@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
-import EditNoteIcon from '@mui/icons-material/EditNote'; 
+import EditNoteIcon from '@mui/icons-material/EditNote';
 import { Typography } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import CustomCheckbox from './assets/check';
@@ -115,7 +115,7 @@ const App: React.FC = () => {
             </Typography>
           </div>
           <div className="h-[20%] w-full flex justify-center items-center rounded-lg">
-            <div className="h-full w-[80%] flex justify-center items-center rounded-lg ml-5">
+            <div className="h-full w-[80%] flex justify-center items-center flex-row rounded-lg ml-5">
               <input
                 className="text-white w-full outline-none bg-transparent border-b-2 border-white"
                 type="text"
@@ -123,11 +123,16 @@ const App: React.FC = () => {
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Add New Task"
               />
+           
               <input
-                className="text-white w-full outline-none bg-transparent border-b-2 border-white ml-2"
+                id="datetime-input"
+                className="text-black w-full  bg-white  ml-2 rounded-lg"
                 type="datetime-local"
+                name="Choose Time"
+                aria-label="Choose Time"
                 value={dateValue}
                 onChange={(e) => setDateValue(e.target.value)}
+                
               />
             </div>
             <div className="h-full w-[20%] flex justify-center items-center rounded-lg">
