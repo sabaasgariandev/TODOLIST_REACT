@@ -7,6 +7,7 @@ import CustomCheckbox from './assets/check';
 import TaskAltSharpIcon from '@mui/icons-material/TaskAltSharp';
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import FlakySharpIcon from '@mui/icons-material/FlakySharp';
+
 interface Todo {
   text: string;
   isChecked: boolean;
@@ -41,7 +42,10 @@ const App: React.FC = () => {
     const updatedTodos = [...todos, newTodo];
     setTodos(updatedTodos);
     setInputValue('');
-    setDateValue('');
+    setDateValue(() => {
+      const now = new Date();
+      return now.toISOString().slice(0, 16); // Reset to current date and time
+    });
     saveToLocalStorage(updatedTodos);
   };
 
@@ -161,7 +165,7 @@ const App: React.FC = () => {
               <li key={index} className={`w-[90%] h-full flex justify-center items-center my-3 ${todo.isChecked ? 'line-through text-gray-500' : 'text-white'} bg-[#191933]`}>
                 <div className="w-[68%] h-full mx-2">
                   <b className="stufftodo">
-                    {todo.text} {todo.date && `(${todo.date})`} {/* نمایش تاریخ */}
+                    {todo.text} {todo.date && `(${todo.date})`} {/* show time */}
                   </b>
                 </div>
                 <div className="w-[30%] h-full">
