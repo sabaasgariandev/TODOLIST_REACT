@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
-import EditNoteIcon from '@mui/icons-material/EditNote';
+import EditNoteIcon from '@mui/icons-material/EditNote'; 
 import { Typography } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import CustomCheckbox from './assets/check';
