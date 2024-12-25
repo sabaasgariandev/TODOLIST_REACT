@@ -9,7 +9,7 @@
 1. **کلون کردن مخزن:**
    ابتدا مخزن را به صورت محلی کلون کنید:
    ```bash
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/sabaasgariandev/TODOLIST_REACT
    ```
 
 2. **نصب وابستگی‌ها:**
@@ -22,13 +22,16 @@
 3. **اجرای پروژه:**
    پس از نصب وابستگی‌ها، می‌توانید پروژه را با استفاده از دستور زیر اجرا کنید:
    ```bash
-   npm start
+   npm run dev
+   yarn dev 
    ```
 
 4. **دسترسی به برنامه:**
-   پس از اجرای پروژه، می‌توانید به آدرس `http://localhost:3000` در مرورگر خود بروید تا برنامه را مشاهده کنید.
+   پس از اجرای پروژه، می‌توانید به آدرس `http://localhost:5173` در مرورگر خود بروید تا برنامه را مشاهده کنید.
 
 ## تکنولوژی‌های استفاده شده
 - React
 - TypeScript
 - Material-UI
+- Tailwind
+- Localstorage
