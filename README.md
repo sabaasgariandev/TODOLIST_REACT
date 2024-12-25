@@ -1,18 +1,34 @@
-# TODOLIST_REACT 
-To-Do-List With React js & local Storage
-- [Demo Project](https://todo-mu-black.vercel.app/)
+# پروژه Todo List
 
+این پروژه یک برنامه Todo List ساده است که با استفاده از React و TypeScript ساخته شده است.
 
-- Developed by Saba Asgarian
+## نحوه اجرای پروژه
 
-- Created - 2024-11-11
+برای اجرای پروژه، مراحل زیر را دنبال کنید:
 
-- Technologies Used - Html , Css , MaterialUi ,React js , Local storage
+1. **کلون کردن مخزن:**
+   ابتدا مخزن را به صورت محلی کلون کنید:
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   ```
 
-- Hooks Used : useState
-- Role - Frontend
+2. **نصب وابستگی‌ها:**
+   به دایرکتوری پروژه بروید و وابستگی‌ها را نصب کنید:
+   ```bash
+   cd repo-name
+   npm install
+   ```
 
-- How to reach me : with my [instagram](https://www.instagram.com/saba_asgarian_web?igsh=M2Z2dTU3cHFmeW1o&utm_source=qr) and [linkedin](https://www.linkedin.com/in/saba-asgarian-69161088?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+3. **اجرای پروژه:**
+   پس از نصب وابستگی‌ها، می‌توانید پروژه را با استفاده از دستور زیر اجرا کنید:
+   ```bash
+   npm start
+   ```
 
+4. **دسترسی به برنامه:**
+   پس از اجرای پروژه، می‌توانید به آدرس `http://localhost:3000` در مرورگر خود بروید تا برنامه را مشاهده کنید.
 
-![Capture](https://github.com/user-attachments/assets/1cbcfe66-ae56-4e76-aead-b994dfba457c)
+## تکنولوژی‌های استفاده شده
+- React
+- TypeScript
+- Material-UI
